@@ -8,8 +8,16 @@
 
 import UIKit
 
-class TripViewController: UIViewController {
+class TripViewController: UIViewController, TripViewDataSource {
 
+    func getTripInfo() -> Trip? {
+        <#code#>
+    }
+    
+    var model = Trips()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,8 +8,18 @@
 
 import UIKit
 
+protocol TripViewDataSource : class {
+    func getTripInfo() -> Trip?
+}
+
 class TripView: UIScrollView {
 
+    weak var dataSource: TripViewDataSource?
+    
+    
+    
+    
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

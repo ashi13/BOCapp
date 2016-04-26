@@ -12,7 +12,7 @@ import Foundation
 
 class Trips {
     
-    
+    let kayaking = Trip(title: "Kayaking", imageName: "kayaking.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murowchick.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
     
     
 }
