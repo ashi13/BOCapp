@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451201CC6883E00AB163F /* AppDelegate.swift */; };
-		D77451231CC6883E00AB163F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451221CC6883E00AB163F /* ViewController.swift */; };
 		D77451261CC6883E00AB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451241CC6883E00AB163F /* Main.storyboard */; };
 		D77451281CC6883E00AB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77451271CC6883E00AB163F /* Assets.xcassets */; };
 		D774512B1CC6883E00AB163F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451291CC6883E00AB163F /* LaunchScreen.storyboard */; };
 		D77451361CC6883E00AB163F /* BOCappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451351CC6883E00AB163F /* BOCappTests.swift */; };
 		D77451411CC6883E00AB163F /* BOCappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451401CC6883E00AB163F /* BOCappUITests.swift */; };
 		D77451511CC68A6D00AB163F /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451501CC68A6D00AB163F /* Trips.swift */; };
+		D7CA63EC1CCFED0B00080A59 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		D774511D1CC6883E00AB163F /* BOCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77451201CC6883E00AB163F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D77451221CC6883E00AB163F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D77451251CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D77451271CC6883E00AB163F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D774512A1CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		D77451401CC6883E00AB163F /* BOCappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOCappUITests.swift; sourceTree = "<group>"; };
 		D77451421CC6883E00AB163F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77451501CC68A6D00AB163F /* Trips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripViewController.swift; path = ../TripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				D77451201CC6883E00AB163F /* AppDelegate.swift */,
-				D77451221CC6883E00AB163F /* ViewController.swift */,
+				D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */,
 				D77451501CC68A6D00AB163F /* Trips.swift */,
 				D77451241CC6883E00AB163F /* Main.storyboard */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
@@ -262,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CA63EC1CCFED0B00080A59 /* TripViewController.swift in Sources */,
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
-				D77451231CC6883E00AB163F /* ViewController.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +491,7 @@
 				D77451471CC6883E00AB163F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D77451481CC6883E00AB163F /* Build configuration list for PBXNativeTarget "BOCappTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				D774514A1CC6883E00AB163F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D774514B1CC6883E00AB163F /* Build configuration list for PBXNativeTarget "BOCappUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +509,7 @@
 				D774514D1CC6883E00AB163F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
