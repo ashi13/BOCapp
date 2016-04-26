@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */; };
 		2D2EC0011CCFFB4F0018E55C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */; };
+		2D2EC0031CCFFC1D0018E55C /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0021CCFFC1D0018E55C /* TripView.swift */; };
+		2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0041CCFFC390018E55C /* Trip.swift */; };
 		D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451201CC6883E00AB163F /* AppDelegate.swift */; };
 		D77451261CC6883E00AB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451241CC6883E00AB163F /* Main.storyboard */; };
 		D77451281CC6883E00AB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77451271CC6883E00AB163F /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripViewController.swift; path = ../TripViewController.swift; sourceTree = "<group>"; };
 		2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewController.swift; path = ../FeedTableViewController.swift; sourceTree = "<group>"; };
+		2D2EC0021CCFFC1D0018E55C /* TripView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		2D2EC0041CCFFC390018E55C /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		D774511D1CC6883E00AB163F /* BOCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77451201CC6883E00AB163F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77451251CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,9 +107,11 @@
 			children = (
 				D77451201CC6883E00AB163F /* AppDelegate.swift */,
 				2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */,
+				2D2EC0021CCFFC1D0018E55C /* TripView.swift */,
 				2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */,
-				D77451501CC68A6D00AB163F /* Trips.swift */,
 				D77451241CC6883E00AB163F /* Main.storyboard */,
+				D77451501CC68A6D00AB163F /* Trips.swift */,
+				2D2EC0041CCFFC390018E55C /* Trip.swift */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
 				D77451291CC6883E00AB163F /* LaunchScreen.storyboard */,
 				D774512C1CC6883E00AB163F /* Info.plist */,
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */,
 				2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */,
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,
+				2D2EC0031CCFFC1D0018E55C /* TripView.swift in Sources */,
 				2D2EC0011CCFFB4F0018E55C /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
