@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */; };
+		2D2EC0011CCFFB4F0018E55C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */; };
 		D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451201CC6883E00AB163F /* AppDelegate.swift */; };
 		D77451261CC6883E00AB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451241CC6883E00AB163F /* Main.storyboard */; };
 		D77451281CC6883E00AB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77451271CC6883E00AB163F /* Assets.xcassets */; };
@@ -14,7 +16,6 @@
 		D77451361CC6883E00AB163F /* BOCappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451351CC6883E00AB163F /* BOCappTests.swift */; };
 		D77451411CC6883E00AB163F /* BOCappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451401CC6883E00AB163F /* BOCappUITests.swift */; };
 		D77451511CC68A6D00AB163F /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451501CC68A6D00AB163F /* Trips.swift */; };
-		D7CA63EC1CCFED0B00080A59 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripViewController.swift; path = ../TripViewController.swift; sourceTree = "<group>"; };
+		2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewController.swift; path = ../FeedTableViewController.swift; sourceTree = "<group>"; };
 		D774511D1CC6883E00AB163F /* BOCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77451201CC6883E00AB163F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77451251CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		D77451401CC6883E00AB163F /* BOCappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOCappUITests.swift; sourceTree = "<group>"; };
 		D77451421CC6883E00AB163F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77451501CC68A6D00AB163F /* Trips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
-		D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripViewController.swift; path = ../TripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				D77451201CC6883E00AB163F /* AppDelegate.swift */,
-				D7CA63EB1CCFED0B00080A59 /* TripViewController.swift */,
+				2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */,
+				2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */,
 				D77451501CC68A6D00AB163F /* Trips.swift */,
 				D77451241CC6883E00AB163F /* Main.storyboard */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7CA63EC1CCFED0B00080A59 /* TripViewController.swift in Sources */,
+				2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */,
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,
+				2D2EC0011CCFFB4F0018E55C /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
