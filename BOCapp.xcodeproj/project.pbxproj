@@ -18,6 +18,7 @@
 		D77451361CC6883E00AB163F /* BOCappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451351CC6883E00AB163F /* BOCappTests.swift */; };
 		D77451411CC6883E00AB163F /* BOCappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451401CC6883E00AB163F /* BOCappUITests.swift */; };
 		D77451511CC68A6D00AB163F /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451501CC68A6D00AB163F /* Trips.swift */; };
+		D782EF611CD7A9CB00F4BF30 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D782EF601CD7A9CB00F4BF30 /* TripTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D77451401CC6883E00AB163F /* BOCappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOCappUITests.swift; sourceTree = "<group>"; };
 		D77451421CC6883E00AB163F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D77451501CC68A6D00AB163F /* Trips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		D782EF601CD7A9CB00F4BF30 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D77451501CC68A6D00AB163F /* Trips.swift */,
 				2D2EC0041CCFFC390018E55C /* Trip.swift */,
 				D77451241CC6883E00AB163F /* Main.storyboard */,
+				D782EF601CD7A9CB00F4BF30 /* TripTableViewCell.swift */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
 				D77451291CC6883E00AB163F /* LaunchScreen.storyboard */,
 				D774512C1CC6883E00AB163F /* Info.plist */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */,
+				D782EF611CD7A9CB00F4BF30 /* TripTableViewCell.swift in Sources */,
 				2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */,
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,

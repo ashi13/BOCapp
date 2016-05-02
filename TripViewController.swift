@@ -11,7 +11,7 @@ import UIKit
 class TripViewController: UIViewController, TripViewDataSource {
 
     func getTripInfo() -> Trip? {
-        <#code#>
+        return nil
     }
     
     var model = Trips()
