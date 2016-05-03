@@ -10,6 +10,7 @@ import UIKit
 
 class TripTableViewCell: UITableViewCell {
 
+    // MARK: Properties
     
     @IBOutlet weak var tripPicture: UIImageView!
     @IBOutlet weak var tripName: UILabel!

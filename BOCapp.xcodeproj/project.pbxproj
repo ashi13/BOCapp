@@ -108,13 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				D77451201CC6883E00AB163F /* AppDelegate.swift */,
+				D77451241CC6883E00AB163F /* Main.storyboard */,
+				D7F796541CD96647009D8ECF /* Trip View */,
 				2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */,
 				2D2EC0021CCFFC1D0018E55C /* TripView.swift */,
+				D7F796531CD96636009D8ECF /* Feed View */,
 				2D2EC0001CCFFB4F0018E55C /* FeedTableViewController.swift */,
-				D77451501CC68A6D00AB163F /* Trips.swift */,
-				2D2EC0041CCFFC390018E55C /* Trip.swift */,
-				D77451241CC6883E00AB163F /* Main.storyboard */,
 				D782EF601CD7A9CB00F4BF30 /* TripTableViewCell.swift */,
+				D7F796551CD96661009D8ECF /* Trips */,
+				2D2EC0041CCFFC390018E55C /* Trip.swift */,
+				D77451501CC68A6D00AB163F /* Trips.swift */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
 				D77451291CC6883E00AB163F /* LaunchScreen.storyboard */,
 				D774512C1CC6883E00AB163F /* Info.plist */,
@@ -138,6 +141,27 @@
 				D77451421CC6883E00AB163F /* Info.plist */,
 			);
 			path = BOCappUITests;
+			sourceTree = "<group>";
+		};
+		D7F796531CD96636009D8ECF /* Feed View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Feed View";
+			sourceTree = "<group>";
+		};
+		D7F796541CD96647009D8ECF /* Trip View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Trip View";
+			sourceTree = "<group>";
+		};
+		D7F796551CD96661009D8ECF /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Trips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

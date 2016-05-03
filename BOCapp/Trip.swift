@@ -27,7 +27,7 @@ class Trip {
     
     // MARK: Initialization
     
-    init(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String){
+    init?(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String){
         
         self.title = title
         self.imageName = imageName
@@ -39,6 +39,8 @@ class Trip {
         self.leaderDescription = leaderDescription
         
         self.description = description
+        
+        
         
     }
     

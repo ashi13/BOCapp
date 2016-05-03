@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="sJt-Gc-1xE" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="sJt-Gc-1xE" userLabel="TripTableViewCell" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJt-Gc-1xE" id="DGl-cX-Yw1">
@@ -106,6 +106,7 @@
         <!--Trip View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="TripViewController" customModule="BOCapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -128,7 +129,6 @@
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>

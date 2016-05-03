@@ -8,32 +8,28 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController {
+class FeedTableViewController: UITableViewController {  // Adopts necessary protocols for delegate and datasource
     
-//    func getTripInfo() -> Trip? {
-//        return nil
-//    }
+    // MARK: Properties
     
     var trips = [Trip]()
     
-    @IBOutlet var tripTableView: UITableView!
+    //@IBOutlet var tripTableView: UITableView!
     
     
     /* Function loads predefined trips to show in trip feed */
     func loadSampleTrips() {
-        let kayakTrip = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
-        let kayakTrip2 = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
         
+        trips = [Trips().kayakTrip!, Trips().mountainTrip!]
         
-        trips += [kayakTrip, kayakTrip2]
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tripTableView.dataSource = self
-        tripTableView.delegate = self
+        //tripTableView.dataSource = self
+        //tripTableView.delegate = self
         
         // Load sample data
         loadSampleTrips()
@@ -66,14 +62,13 @@ class FeedTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let tableViewCellIdentifier = "TripTableViewCell"
+        let tripCellIdentifier = "TripTableViewCell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(tableViewCellIdentifier, forIndexPath: indexPath) as! TripTableViewCell
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier(tripCellIdentifier, forIndexPath: indexPath) as! TripTableViewCell
         
-        let trip = trips[indexPath.row]
+        let trip = trips[indexPath.row]     // Grabs the right cell to load data to
         
+        // Load data to individual elements of TripTableViewCell
         cell.tripName.text = trip.title
         
 
