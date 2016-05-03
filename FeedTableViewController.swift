@@ -9,9 +9,36 @@
 import UIKit
 
 class FeedTableViewController: UITableViewController {
-
+    
+//    func getTripInfo() -> Trip? {
+//        return nil
+//    }
+    
+    var trips = [Trip]()
+    
+    @IBOutlet var tripTableView: UITableView!
+    
+    
+    /* Function loads predefined trips to show in trip feed */
+    func loadSampleTrips() {
+        let kayakTrip = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
+        let kayakTrip2 = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
+        
+        
+        trips += [kayakTrip, kayakTrip2]
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tripTableView.dataSource = self
+        tripTableView.delegate = self
+        
+        // Load sample data
+        loadSampleTrips()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,24 +55,31 @@ class FeedTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return trips.count
+        
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+        let tableViewCellIdentifier = "TripTableViewCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(tableViewCellIdentifier, forIndexPath: indexPath) as! TripTableViewCell
 
         // Configure the cell...
+        
+        let trip = trips[indexPath.row]
+        
+        cell.tripName.text = trip.title
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

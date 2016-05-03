@@ -12,7 +12,8 @@ import Foundation
 
 class Trips {
     
-    let kayaking = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
+    
+    let kayakTrip = Trip(title: "Kayaking", imageName: "sea_kayak_group.jpg", leaderName: "Andrew Murowchick", leaderImageName: "murow_profile.jpg", leaderDescription: "Really cool guy!", description: "We will kayak and it will be so much fun trust us!!!")
     
     
 }

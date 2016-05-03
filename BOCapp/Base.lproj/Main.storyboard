@@ -3,29 +3,91 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed Table View Controller-->
         <scene sceneID="Q0t-l5-nYn">
             <objects>
                 <tableViewController id="Wr6-Qb-MRo" customClass="FeedTableViewController" customModule="BOCapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" id="qrx-RO-f0K">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" id="qrx-RO-f0K">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="sJt-Gc-1xE" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="93"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="sJt-Gc-1xE" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJt-Gc-1xE" id="DGl-cX-Yw1">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="92"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITW-yI-KD9">
-                                            <rect key="frame" x="0.0" y="0.0" width="86" height="92"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ITW-yI-KD9">
+                                            <rect key="frame" x="8" y="0.0" width="135" height="135"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="135" id="Dbo-dX-hNG"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S82-Lv-Bbb">
+                                            <rect key="frame" x="156" y="8" width="79" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvX-Kj-7c4">
+                                            <rect key="frame" x="156" y="37" width="100" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlk-he-z6Y">
+                                            <rect key="frame" x="236" y="94" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rhe-fR-sqb">
+                                            <rect key="frame" x="156" y="75" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="zmQ-rU-Ux0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spots Filled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eag-9d-CyY">
+                                            <rect key="frame" x="492" y="18" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="SfW-Va-fkD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ITW-yI-KD9" firstAttribute="bottom" secondItem="DGl-cX-Yw1" secondAttribute="bottomMargin" id="89j-q0-PAd"/>
+                                        <constraint firstItem="Eag-9d-CyY" firstAttribute="trailing" secondItem="DGl-cX-Yw1" secondAttribute="trailingMargin" id="DUh-Ul-ahb"/>
+                                        <constraint firstItem="Eag-9d-CyY" firstAttribute="top" secondItem="DGl-cX-Yw1" secondAttribute="topMargin" constant="10" id="GRE-3Z-FaZ"/>
+                                        <constraint firstItem="FvX-Kj-7c4" firstAttribute="leading" secondItem="rhe-fR-sqb" secondAttribute="leading" id="Ii7-jv-K5i"/>
+                                        <constraint firstItem="rhe-fR-sqb" firstAttribute="top" secondItem="FvX-Kj-7c4" secondAttribute="bottom" constant="17" id="M0t-Y7-ZgJ"/>
+                                        <constraint firstItem="rhe-fR-sqb" firstAttribute="centerY" secondItem="Tlk-he-z6Y" secondAttribute="centerY" id="Wt2-g9-tIm"/>
+                                        <constraint firstItem="S82-Lv-Bbb" firstAttribute="leading" secondItem="FvX-Kj-7c4" secondAttribute="leading" id="bgw-hB-aPM"/>
+                                        <constraint firstItem="ITW-yI-KD9" firstAttribute="bottom" secondItem="rhe-fR-sqb" secondAttribute="bottom" id="chD-Sa-eHv"/>
+                                        <constraint firstItem="ITW-yI-KD9" firstAttribute="centerY" secondItem="Eag-9d-CyY" secondAttribute="centerY" id="hIg-ML-J81"/>
+                                        <constraint firstItem="FvX-Kj-7c4" firstAttribute="top" secondItem="S82-Lv-Bbb" secondAttribute="bottom" constant="8" symbolic="YES" id="iEz-ep-Z0a"/>
+                                        <constraint firstItem="Tlk-he-z6Y" firstAttribute="leading" secondItem="rhe-fR-sqb" secondAttribute="trailing" constant="20" id="mji-t1-Wdj"/>
+                                        <constraint firstItem="ITW-yI-KD9" firstAttribute="leading" secondItem="DGl-cX-Yw1" secondAttribute="leadingMargin" id="nk6-EQ-Sfv"/>
+                                        <constraint firstItem="ITW-yI-KD9" firstAttribute="top" secondItem="DGl-cX-Yw1" secondAttribute="top" id="qU4-20-Jcz"/>
+                                        <constraint firstItem="S82-Lv-Bbb" firstAttribute="top" secondItem="DGl-cX-Yw1" secondAttribute="topMargin" id="qne-n9-w50"/>
+                                        <constraint firstItem="S82-Lv-Bbb" firstAttribute="leading" secondItem="ITW-yI-KD9" secondAttribute="trailing" constant="13" id="qtT-zp-6zu"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leaderName" destination="Tlk-he-z6Y" id="1o5-Pq-s99"/>
+                                    <outlet property="leaderPicture" destination="rhe-fR-sqb" id="bwU-LY-083"/>
+                                    <outlet property="tripCapacity" destination="Eag-9d-CyY" id="UEW-Jq-8pR"/>
+                                    <outlet property="tripLocation" destination="FvX-Kj-7c4" id="igJ-M7-LfH"/>
+                                    <outlet property="tripName" destination="S82-Lv-Bbb" id="mlj-k7-V2T"/>
+                                    <outlet property="tripPicture" destination="ITW-yI-KD9" id="1fT-oJ-glu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,6 +95,9 @@
                             <outlet property="delegate" destination="Wr6-Qb-MRo" id="GLS-Am-DMa"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="feedTableView" destination="qrx-RO-f0K" id="vym-GI-TNN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seq-Wa-Mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
