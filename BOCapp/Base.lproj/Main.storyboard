@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="sJt-Gc-1xE" userLabel="TripTableViewCell" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripTableViewCell" rowHeight="144" id="sJt-Gc-1xE" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJt-Gc-1xE" id="DGl-cX-Yw1">
@@ -95,9 +95,6 @@
                             <outlet property="delegate" destination="Wr6-Qb-MRo" id="GLS-Am-DMa"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="feedTableView" destination="qrx-RO-f0K" id="vym-GI-TNN"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seq-Wa-Mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,10 +14,10 @@ class TripTableViewCell: UITableViewCell {
     
     @IBOutlet weak var tripPicture: UIImageView!
     @IBOutlet weak var tripName: UILabel!
-    //@IBOutlet weak var tripLocation: UILabel!
+    @IBOutlet weak var tripLocation: UILabel!
     @IBOutlet weak var leaderPicture: UIImageView!
     @IBOutlet weak var leaderName: UILabel!
-    //@IBOutlet weak var tripCapacity: UILabel!
+    @IBOutlet weak var tripCapacity: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

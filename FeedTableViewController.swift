@@ -14,9 +14,6 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
     
     var trips = [Trip]()
     
-    //@IBOutlet var tripTableView: UITableView!
-    
-    
     /* Function loads predefined trips to show in trip feed */
     func loadSampleTrips() {
         
