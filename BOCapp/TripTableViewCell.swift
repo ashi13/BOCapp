@@ -11,9 +11,8 @@ import UIKit
 class TripTableViewCell: UITableViewCell {
 
     // MARK: Properties
-    
-    @IBOutlet weak var tripPicture: UIImageView!
     @IBOutlet weak var tripName: UILabel!
+    @IBOutlet weak var tripPicture: UIImageView!
     @IBOutlet weak var tripLocation: UILabel!
     @IBOutlet weak var leaderPicture: UIImageView!
     @IBOutlet weak var leaderName: UILabel!

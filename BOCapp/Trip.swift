@@ -16,6 +16,7 @@ class Trip {
     var title: String
     var imageName: String
     var image: UIImage?
+    var location: String
     
     var leaderName: String
     var leaderImageName: String
@@ -27,11 +28,12 @@ class Trip {
     
     // MARK: Initialization
     
-    init?(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String){
+    init?(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String, location: String){
         
         self.title = title
         self.imageName = imageName
         self.image = UIImage(named: imageName)
+        self.location = location
         
         self.leaderName = leaderName
         self.leaderImageName = leaderImageName

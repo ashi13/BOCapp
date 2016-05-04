@@ -67,6 +67,13 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
         
         // Load data to individual elements of TripTableViewCell
         cell.tripName.text = trip.title
+        cell.tripPicture.image = trip.image
+        cell.tripLocation.text = trip.location
+        cell.leaderPicture.image = trip.leaderImage
+        cell.leaderName.text = trip.leaderName
+        cell.tripCapacity.text = "0/10"
+        
+        
         
 
         return cell
