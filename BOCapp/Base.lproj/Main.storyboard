@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wr6-Qb-MRo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ufc-9i-M1E">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Feed Table View Controller-->
+        <!--Trip Feed-->
         <scene sceneID="Q0t-l5-nYn">
             <objects>
                 <tableViewController id="Wr6-Qb-MRo" customClass="FeedTableViewController" customModule="BOCapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripTableViewCell" rowHeight="113" id="sJt-Gc-1xE" customClass="TripTableViewCell" customModule="BOCapp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="113"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJt-Gc-1xE" id="DGl-cX-Yw1">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
@@ -88,6 +88,7 @@
                                     <outlet property="tripLocation" destination="FvX-Kj-7c4" id="igJ-M7-LfH"/>
                                     <outlet property="tripName" destination="S82-Lv-Bbb" id="mlj-k7-V2T"/>
                                     <outlet property="tripPicture" destination="ITW-yI-KD9" id="1fT-oJ-glu"/>
+                                    <segue destination="iPw-C8-7fu" kind="show" identifier="ShowDetail" id="8dH-Hw-m7G"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -96,14 +97,16 @@
                             <outlet property="delegate" destination="Wr6-Qb-MRo" id="GLS-Am-DMa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Trip Feed" id="t0i-fn-hC6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seq-Wa-Mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="417"/>
+            <point key="canvasLocation" x="402" y="417"/>
         </scene>
-        <!--Trip View Controller-->
+        <!--Some Trip-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="TripViewController" customModule="BOCapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -113,34 +116,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUS-eG-o9y" customClass="TripView" customModule="BOCapp" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUS-eG-o9y" customClass="TripView" customModule="BOCapp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TF-Ht-voy">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
-                                        <color key="backgroundColor" red="0.96872122469999999" green="0.96872122469999999" blue="0.96872122469999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="7T5-EC-c6R"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XUS-eG-o9y" secondAttribute="trailing" id="2aZ-Ce-Zc9"/>
-                            <constraint firstItem="XUS-eG-o9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4OU-g9-q7Y"/>
-                            <constraint firstItem="XUS-eG-o9y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8GS-KD-9Qb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XUS-eG-o9y" secondAttribute="bottom" id="bfh-DB-6Aj"/>
-                            <constraint firstItem="1TF-Ht-voy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="er1-ke-1ZA"/>
+                            <constraint firstItem="XUS-eG-o9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="He4-A5-LYO"/>
+                            <constraint firstItem="XUS-eG-o9y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ITg-vn-hMw"/>
+                            <constraint firstItem="XUS-eG-o9y" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Lp9-Os-4JW"/>
+                            <constraint firstAttribute="trailing" secondItem="XUS-eG-o9y" secondAttribute="trailing" id="Mho-8e-QMy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Some Trip" id="rZS-l8-06o"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="tripView" destination="XUS-eG-o9y" id="u1q-l7-Azz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="387"/>
+            <point key="canvasLocation" x="1929" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wEL-Br-CFu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ufc-9i-M1E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MV0-IH-VRt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wr6-Qb-MRo" kind="relationship" relationship="rootViewController" id="uQu-Vj-nd7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bF-lH-Na5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xAJ-g7-NIR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4h-Wt-g63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="iPw-C8-7fu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h01-cD-awS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J1e-4t-aHt"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1191" y="921"/>
         </scene>
     </scenes>
 </document>

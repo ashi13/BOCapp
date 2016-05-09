@@ -73,9 +73,6 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
         cell.leaderName.text = trip.leaderName
         cell.tripCapacity.text = "0/10"
         
-        
-        
-
         return cell
     }
     
@@ -120,8 +117,18 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "ShowDetail" {
+            let tripDetailViewController = segue.destinationViewController as! TripViewController
+            
+            // Provide access to trip selected in main view
+            if let selectedTripCell = sender as? TripTableViewCell {  // Selected TripTableViewCell
+                let indexPath = tableView.indexPathForCell(selectedTripCell)!
+                let selectedTrip = trips[indexPath.row]
+                tripDetailViewController.trip = selectedTrip
+            }
+        }
+        
     }
     */
 

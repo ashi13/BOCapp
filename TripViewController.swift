@@ -8,13 +8,22 @@
 
 import UIKit
 
-class TripViewController: UIViewController, TripViewDataSource {
+class TripViewController: UITableViewController, TripViewDataSource {
 
+    @IBOutlet weak var tripView: TripView! {
+        didSet {
+            tripView.dataSource = self
+        }
+    }
+    // MARK: Properties for trip view
+    
+    
     func getTripInfo() -> Trip? {
         return nil
     }
     
-    var model = Trips()
+    //var model = Trips()
+    var trip: Trip?
     
     
     
