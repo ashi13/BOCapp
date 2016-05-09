@@ -17,7 +17,7 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
     /* Function loads predefined trips to show in trip feed */
     func loadSampleTrips() {
         
-        trips = [Trips().kayakTrip!, Trips().mountainTrip!]
+        trips = [Trips().kayakTrip!, Trips().mountainTrip!, Trips().whiteWater!, Trips().hiking1!, Trips().hiking2!, Trips().surfing!, Trips().surfing2!]
         
     }
     
