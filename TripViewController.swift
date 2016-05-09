@@ -8,29 +8,37 @@
 
 import UIKit
 
-class TripViewController: UITableViewController, TripViewDataSource {
-
-    @IBOutlet weak var tripView: TripView! {
-        didSet {
-            tripView.dataSource = self
-        }
-    }
+class TripViewController: UIViewController { //, TripViewDataSource {
+ 
+    
     // MARK: Properties for trip view
-    
-    
-    func getTripInfo() -> Trip? {
-        return nil
-    }
-    
-    //var model = Trips()
-    var trip: Trip?
-    
-    
+    @IBOutlet weak var tripPicture: UIImageView!
+
+//    @IBOutlet weak var tripView: TripView! {
+//        didSet {
+//            tripView.dataSource = self
+//        }
+//    }
+//    
+//    func getTripInfo() -> Trip? {
+//        return nil
+//    }
+//    
+//    var model = Trips()
+
+    @IBOutlet weak var tripView: TripView!  // UIScrollView 
+    var trip: Trip? // Pushed over by segue when selected from TableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let trip = trip {
+            navigationItem.title = trip.title
+            tripPicture.image = trip.image
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

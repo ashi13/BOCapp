@@ -112,14 +112,15 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "ShowDetail" {
-            let tripDetailViewController = segue.destinationViewController as! TripViewController
+            let nav = segue.destinationViewController as! UINavigationController
+            let tripDetailViewController = nav.topViewController as! TripViewController
             
             // Provide access to trip selected in main view
             if let selectedTripCell = sender as? TripTableViewCell {  // Selected TripTableViewCell
@@ -130,6 +131,6 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
         }
         
     }
-    */
+    
 
 }

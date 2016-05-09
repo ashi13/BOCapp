@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="402" y="417"/>
         </scene>
-        <!--Some Trip-->
+        <!--Trip Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,6 +118,21 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUS-eG-o9y" customClass="TripView" customModule="BOCapp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpZ-hO-9w5">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="249"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="249" id="rDw-ld-L2K"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bpZ-hO-9w5" secondAttribute="bottom" constant="751" id="Awk-qu-cdC"/>
+                                    <constraint firstItem="bpZ-hO-9w5" firstAttribute="leading" secondItem="XUS-eG-o9y" secondAttribute="leading" id="XEI-wl-Hrb"/>
+                                    <constraint firstItem="bpZ-hO-9w5" firstAttribute="centerX" secondItem="XUS-eG-o9y" secondAttribute="centerX" id="a1k-qi-yAH"/>
+                                    <constraint firstAttribute="trailing" secondItem="bpZ-hO-9w5" secondAttribute="trailing" id="gaZ-hw-pBU"/>
+                                    <constraint firstItem="bpZ-hO-9w5" firstAttribute="top" secondItem="XUS-eG-o9y" secondAttribute="top" id="hgL-iz-Ncn"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -128,11 +143,12 @@
                             <constraint firstAttribute="trailing" secondItem="XUS-eG-o9y" secondAttribute="trailing" id="Mho-8e-QMy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Some Trip" id="rZS-l8-06o"/>
+                    <navigationItem key="navigationItem" title="Trip Name" id="rZS-l8-06o"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
-                        <outlet property="tripView" destination="XUS-eG-o9y" id="u1q-l7-Azz"/>
+                        <outlet property="tripPicture" destination="bpZ-hO-9w5" id="iDc-pR-VmJ"/>
+                        <outlet property="tripView" destination="XUS-eG-o9y" id="z8B-sP-B92"/>
                     </connections>
                 </viewController>
             </objects>
