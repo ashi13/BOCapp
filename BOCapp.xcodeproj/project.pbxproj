@@ -12,6 +12,7 @@
 		2D2EC0031CCFFC1D0018E55C /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0021CCFFC1D0018E55C /* TripView.swift */; };
 		2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0041CCFFC390018E55C /* Trip.swift */; };
 		D309C58D1CE03E5A0056FD8A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D309C58C1CE03E5A0056FD8A /* SWRevealViewController.m */; };
+		D3DDCC341CE1828F00360FEC /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDCC331CE1828F00360FEC /* PaddingLabel.swift */; };
 		D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451201CC6883E00AB163F /* AppDelegate.swift */; };
 		D77451261CC6883E00AB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451241CC6883E00AB163F /* Main.storyboard */; };
 		D77451281CC6883E00AB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77451271CC6883E00AB163F /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		D309C58A1CE03E580056FD8A /* BOCapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BOCapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		D309C58B1CE03E5A0056FD8A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D309C58C1CE03E5A0056FD8A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D3DDCC331CE1828F00360FEC /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		D774511D1CC6883E00AB163F /* BOCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77451201CC6883E00AB163F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77451251CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				D77451201CC6883E00AB163F /* AppDelegate.swift */,
 				D77451241CC6883E00AB163F /* Main.storyboard */,
+				D3DDCC331CE1828F00360FEC /* PaddingLabel.swift */,
 				D309C58E1CE03F4B0056FD8A /* SWRevealViewController */,
 				D7F796541CD96647009D8ECF /* Trip View */,
 				2D2EBFFE1CCFFB390018E55C /* TripViewController.swift */,
@@ -319,6 +322,7 @@
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,
 				D309C58D1CE03E5A0056FD8A /* SWRevealViewController.m in Sources */,
+				D3DDCC341CE1828F00360FEC /* PaddingLabel.swift in Sources */,
 				2D2EC0031CCFFC1D0018E55C /* TripView.swift in Sources */,
 				2D2EC0011CCFFB4F0018E55C /* FeedTableViewController.swift in Sources */,
 			);

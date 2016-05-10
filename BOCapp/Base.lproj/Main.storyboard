@@ -63,6 +63,12 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Led by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-Sd-9Ui">
+                                            <rect key="frame" x="170" y="63" width="113" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ITW-yI-KD9" firstAttribute="bottom" secondItem="DGl-cX-Yw1" secondAttribute="bottomMargin" id="2Cq-wb-wdW"/>
@@ -90,7 +96,7 @@
                                     <outlet property="tripLocation" destination="FvX-Kj-7c4" id="igJ-M7-LfH"/>
                                     <outlet property="tripName" destination="S82-Lv-Bbb" id="mlj-k7-V2T"/>
                                     <outlet property="tripPicture" destination="ITW-yI-KD9" id="1fT-oJ-glu"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" action="showDetailViewController:sender:" id="Jlv-5y-c7e"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="1Tt-5X-cL1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -100,6 +106,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Trip Feed" id="t0i-fn-hC6"/>
+                    <connections>
+                        <segue destination="EcU-3r-AII" kind="show" id="X4M-vs-uqB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seq-Wa-Mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,14 +141,14 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="DAb-DD-tUX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6S-Oe-TA7">
                                         <rect key="frame" x="10" y="337" width="580" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-Bk-xuL">
@@ -148,7 +157,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="kbx-zr-TPp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -193,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1177" y="529"/>
+            <point key="canvasLocation" x="2281" y="397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wEL-Br-CFu">
@@ -213,5 +222,26 @@
             </objects>
             <point key="canvasLocation" x="-358" y="417"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="efT-TH-scx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EcU-3r-AII" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CZi-8X-JEV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ni9-QV-foI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoH-Vv-c4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="825"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Tt-5X-cL1"/>
+    </inferredMetricsTieBreakers>
 </document>

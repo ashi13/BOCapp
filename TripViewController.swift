@@ -41,7 +41,8 @@ class TripViewController: UIViewController { //, TripViewDataSource {
             tripName.text = trip.title
             tripDescription.text = trip.description
             
-            
+            tripName.sizeToFit()
+            tripDescription.sizeToFit()
             
             
         }
