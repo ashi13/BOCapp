@@ -13,6 +13,7 @@
 		2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2EC0041CCFFC390018E55C /* Trip.swift */; };
 		D309C58D1CE03E5A0056FD8A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D309C58C1CE03E5A0056FD8A /* SWRevealViewController.m */; };
 		D3DDCC341CE1828F00360FEC /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDCC331CE1828F00360FEC /* PaddingLabel.swift */; };
+		D3DDCC361CE18C6D00360FEC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDCC351CE18C6D00360FEC /* UserProfile.swift */; };
 		D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77451201CC6883E00AB163F /* AppDelegate.swift */; };
 		D77451261CC6883E00AB163F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77451241CC6883E00AB163F /* Main.storyboard */; };
 		D77451281CC6883E00AB163F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77451271CC6883E00AB163F /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		D309C58B1CE03E5A0056FD8A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D309C58C1CE03E5A0056FD8A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D3DDCC331CE1828F00360FEC /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		D3DDCC351CE18C6D00360FEC /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		D774511D1CC6883E00AB163F /* BOCapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77451201CC6883E00AB163F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77451251CC6883E00AB163F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				D782EF601CD7A9CB00F4BF30 /* TripTableViewCell.swift */,
 				D7F796551CD96661009D8ECF /* Trips */,
 				2D2EC0041CCFFC390018E55C /* Trip.swift */,
+				D3DDCC351CE18C6D00360FEC /* UserProfile.swift */,
 				D77451501CC68A6D00AB163F /* Trips.swift */,
 				D77451271CC6883E00AB163F /* Assets.xcassets */,
 				D77451291CC6883E00AB163F /* LaunchScreen.storyboard */,
@@ -318,6 +321,7 @@
 			files = (
 				2D2EC0051CCFFC390018E55C /* Trip.swift in Sources */,
 				D782EF611CD7A9CB00F4BF30 /* TripTableViewCell.swift in Sources */,
+				D3DDCC361CE18C6D00360FEC /* UserProfile.swift in Sources */,
 				2D2EBFFF1CCFFB390018E55C /* TripViewController.swift in Sources */,
 				D77451511CC68A6D00AB163F /* Trips.swift in Sources */,
 				D77451211CC6883E00AB163F /* AppDelegate.swift in Sources */,
