@@ -17,6 +17,7 @@ class TripViewController: UIViewController { //, TripViewDataSource {
     @IBOutlet weak var tripLocation: PaddingLabel!
     @IBOutlet weak var tripDescription: PaddingLabel!
     @IBOutlet weak var leaderName: PaddingLabel!
+    @IBOutlet weak var leaderPicture: UIImageView!
     
 //    @IBOutlet weak var tripView: TripView! {
 //        didSet {
@@ -44,6 +45,7 @@ class TripViewController: UIViewController { //, TripViewDataSource {
             tripDescription.text = trip.description
             tripLocation.text = trip.location
             leaderName.text = trip.leaderName
+            leaderPicture.image = trip.leaderImage
             
             tripName.sizeToFit()
             tripDescription.sizeToFit()

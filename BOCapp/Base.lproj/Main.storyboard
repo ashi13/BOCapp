@@ -161,8 +161,16 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pIl-lC-TWO">
+                                        <rect key="frame" x="8" y="533" width="84" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pIl-lC-TWO" secondAttribute="height" multiplier="1:1" id="0YQ-Ah-zEb"/>
+                                            <constraint firstAttribute="width" constant="84" id="9Y7-WS-WSW"/>
+                                            <constraint firstAttribute="height" constant="84" id="K48-VW-ikZ"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMn-oX-enX" customClass="PaddingLabel" customModule="BOCapp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="533" width="580" height="50"/>
+                                        <rect key="frame" x="100" y="550" width="490" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dKy-Ka-KXC"/>
@@ -176,10 +184,12 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="dw7-Bk-xuL" secondAttribute="trailing" constant="10" id="21c-aV-4Rm"/>
                                     <constraint firstItem="w6S-Oe-TA7" firstAttribute="top" secondItem="fHu-df-u78" secondAttribute="bottom" id="380-Rk-7mU"/>
-                                    <constraint firstItem="pMn-oX-enX" firstAttribute="leading" secondItem="XUS-eG-o9y" secondAttribute="leading" constant="10" id="5aU-fg-RqH"/>
+                                    <constraint firstAttribute="trailing" secondItem="pMn-oX-enX" secondAttribute="trailing" constant="10" id="3XV-fo-ewM"/>
+                                    <constraint firstItem="pMn-oX-enX" firstAttribute="leading" secondItem="pIl-lC-TWO" secondAttribute="trailing" constant="8" id="3gN-Pa-wHq"/>
                                     <constraint firstItem="bpZ-hO-9w5" firstAttribute="leading" secondItem="fHu-df-u78" secondAttribute="leading" constant="-10" id="8z7-XL-Hxq"/>
                                     <constraint firstAttribute="bottom" secondItem="bpZ-hO-9w5" secondAttribute="bottom" constant="687" id="Awk-qu-cdC"/>
                                     <constraint firstItem="bpZ-hO-9w5" firstAttribute="trailing" secondItem="fHu-df-u78" secondAttribute="trailing" constant="10" id="Db9-8B-jKt"/>
+                                    <constraint firstItem="pIl-lC-TWO" firstAttribute="leading" secondItem="XUS-eG-o9y" secondAttribute="leading" constant="8" id="EVJ-4o-eXk"/>
                                     <constraint firstItem="fHu-df-u78" firstAttribute="leading" secondItem="w6S-Oe-TA7" secondAttribute="leading" id="LZ9-Dm-1Br"/>
                                     <constraint firstAttribute="trailing" secondItem="pMn-oX-enX" secondAttribute="trailing" constant="10" id="Onu-Qd-lxQ"/>
                                     <constraint firstItem="fHu-df-u78" firstAttribute="top" secondItem="bpZ-hO-9w5" secondAttribute="bottom" constant="8" id="U5j-ay-nW7"/>
@@ -190,11 +200,17 @@
                                     <constraint firstItem="dw7-Bk-xuL" firstAttribute="top" secondItem="w6S-Oe-TA7" secondAttribute="bottom" constant="8" symbolic="YES" id="dKl-Rq-fED"/>
                                     <constraint firstItem="dw7-Bk-xuL" firstAttribute="top" secondItem="fHu-df-u78" secondAttribute="bottom" constant="58" id="gHK-6Q-2i5"/>
                                     <constraint firstAttribute="trailing" secondItem="bpZ-hO-9w5" secondAttribute="trailing" id="gaZ-hw-pBU"/>
+                                    <constraint firstItem="pIl-lC-TWO" firstAttribute="top" secondItem="dw7-Bk-xuL" secondAttribute="bottom" constant="8" id="gsB-4J-rcE"/>
                                     <constraint firstItem="bpZ-hO-9w5" firstAttribute="top" secondItem="XUS-eG-o9y" secondAttribute="top" id="hgL-iz-Ncn"/>
+                                    <constraint firstItem="pMn-oX-enX" firstAttribute="top" secondItem="dw7-Bk-xuL" secondAttribute="bottom" constant="25" id="plH-jz-Ce8"/>
                                     <constraint firstItem="fHu-df-u78" firstAttribute="trailing" secondItem="dw7-Bk-xuL" secondAttribute="trailing" id="ra9-VE-4rS"/>
-                                    <constraint firstItem="pMn-oX-enX" firstAttribute="top" secondItem="dw7-Bk-xuL" secondAttribute="bottom" constant="8" id="sy8-pD-yeg"/>
                                     <constraint firstItem="fHu-df-u78" firstAttribute="leading" secondItem="dw7-Bk-xuL" secondAttribute="leading" id="tP1-Q4-MCu"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Onu-Qd-lxQ"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -210,6 +226,7 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="leaderName" destination="pMn-oX-enX" id="hwG-CN-aAc"/>
+                        <outlet property="leaderPicture" destination="pIl-lC-TWO" id="zOt-rP-Tu4"/>
                         <outlet property="tripDescription" destination="dw7-Bk-xuL" id="Gqk-BB-qP2"/>
                         <outlet property="tripLocation" destination="w6S-Oe-TA7" id="bpx-xf-rZl"/>
                         <outlet property="tripName" destination="fHu-df-u78" id="z0G-Lk-Ze7"/>
