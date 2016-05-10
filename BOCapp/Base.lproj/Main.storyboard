@@ -190,7 +190,7 @@
                                         <rect key="frame" x="8" y="699" width="582" height="229"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oJG-jo-KSm">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrippersTableViewCell" id="oJG-jo-KSm" customClass="TrippersTableViewCell" customModule="BOCapp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="582" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJG-jo-KSm" id="0Zp-gp-HHR">
@@ -205,6 +205,9 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="tripperName" destination="BhB-8H-ghX" id="VOX-C4-CPO"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -262,6 +265,7 @@
                         <outlet property="tripName" destination="fHu-df-u78" id="z0G-Lk-Ze7"/>
                         <outlet property="tripPicture" destination="bpZ-hO-9w5" id="iDc-pR-VmJ"/>
                         <outlet property="tripView" destination="XUS-eG-o9y" id="z8B-sP-B92"/>
+                        <outlet property="trippersTable" destination="1UM-a6-RCt" id="0lM-6q-8gS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -303,7 +307,7 @@
                                     <constraint firstAttribute="width" constant="209" id="404-M1-DoO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
