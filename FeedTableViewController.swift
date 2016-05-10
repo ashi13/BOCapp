@@ -21,6 +21,17 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        let preferences: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let isLoggedIn: Int = preferences.integerForKey("isLoggedIn") as Int
+        if isLoggedIn != 1 {
+            self.performSegueWithIdentifier("ShowLogin", sender: self)
+        }
+//        else {
+//            // Send user information to main feed/trip
+//        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
