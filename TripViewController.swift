@@ -13,7 +13,9 @@ class TripViewController: UIViewController { //, TripViewDataSource {
     
     // MARK: Properties for trip view
     @IBOutlet weak var tripPicture: UIImageView!
-
+    @IBOutlet weak var tripName: UILabel!
+    @IBOutlet weak var tripDescription: UILabel!
+    
 //    @IBOutlet weak var tripView: TripView! {
 //        didSet {
 //            tripView.dataSource = self
@@ -36,6 +38,10 @@ class TripViewController: UIViewController { //, TripViewDataSource {
         if let trip = trip {
             navigationItem.title = trip.title
             tripPicture.image = trip.image
+            tripName.text = trip.title
+            tripDescription.text = trip.description
+            
+            
             
             
         }
