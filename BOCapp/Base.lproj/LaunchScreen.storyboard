@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bowdoin Outing Club" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-l9-GjH">
                                 <rect key="frame" x="145" y="279" width="311" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew Murowchick and Alex Shi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYJ-YZ-KgS">
@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="67" id="Exi-M5-bgF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -39,7 +39,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.080016418069999998" green="0.28067860700000002" blue="0.074110108159999993" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OGN-l9-GjH" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="169" id="8s4-b4-Ham"/>
                             <constraint firstItem="MYJ-YZ-KgS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EfT-74-tbl"/>

@@ -119,8 +119,10 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "ShowDetail" {
-            let nav = segue.destinationViewController as! UINavigationController
-            let tripDetailViewController = nav.topViewController as! TripViewController
+//            let nav = segue.destinationViewController as! UINavigationController
+//            let tripDetailViewController = nav.topViewController as! TripViewController
+            
+            let tripDetailViewController = segue.destinationViewController as! TripViewController
             
             // Provide access to trip selected in main view
             if let selectedTripCell = sender as? TripTableViewCell {  // Selected TripTableViewCell
