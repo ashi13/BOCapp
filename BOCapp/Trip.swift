@@ -24,11 +24,12 @@ class Trip {
     var leaderDescription: String
     
     var description: String
+    var tripMembers: [UserProfile]
     
     
     // MARK: Initialization
     
-    init?(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String, location: String){
+    init?(title: String, imageName: String, leaderName: String, leaderImageName: String, leaderDescription: String, description: String, location: String, tripMembers: [UserProfile]){
         
         self.title = title
         self.imageName = imageName
@@ -41,6 +42,7 @@ class Trip {
         self.leaderDescription = leaderDescription
         
         self.description = description
+        self.tripMembers = tripMembers
         
         
         
