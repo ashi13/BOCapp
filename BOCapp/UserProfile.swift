@@ -18,7 +18,7 @@ class UserProfile {
         
         self.firstName = firstName
         self.lastName = lastName
-    
+        
     
     }
 }

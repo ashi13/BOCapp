@@ -15,6 +15,10 @@ class UserProfiles {
     
     let AndrewMurowchick = UserProfile(firstName: "Andrew", lastName: "Murowchick")
     let AlexShi = UserProfile(firstName: "Alex", lastName: "Shi")
-
+    
+    //let group1 = [UserProfiles().AndrewMurowchick!, UserProfiles().AlexShi!]
+    //let group2 = [UserProfiles().AndrewMurowchick!]
+    //let group3 = [UserProfiles().AlexShi!]
+    //let group4 = [UserProfile]()
     
 }
