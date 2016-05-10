@@ -19,9 +19,6 @@ class UserProfile {
         self.firstName = firstName
         self.lastName = lastName
     
-    init(firstName: String, lastName: String){
-        self.firstName = firstName
-        self.lastName = lastName
-    }
     
+    }
 }
