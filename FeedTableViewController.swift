@@ -71,7 +71,7 @@ class FeedTableViewController: UITableViewController {  // Adopts necessary prot
         cell.tripLocation.text = trip.location
         cell.leaderPicture.image = trip.leaderImage
         cell.leaderName.text = trip.leaderName
-        cell.tripCapacity.text = "0/10"
+        cell.tripCapacity.text = String(trip.tripMembers.count) + "/10"
         
         return cell
     }
